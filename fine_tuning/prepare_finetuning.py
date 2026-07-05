@@ -7,7 +7,7 @@
 - train_alpaca.jsonl : صيغة instruction/output — مناسبة لـ Alpaca / LLaMA-Factory / Unsloth
 
 التشغيل:
-    python prepare_finetuning.py
+    python fine_tuning/prepare_finetuning.py
 """
 
 import json
@@ -16,7 +16,7 @@ import random
 from collections import defaultdict
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-WORD_JSON = os.path.join(BASE_DIR, "word.json")
+WORD_JSON = os.path.join(BASE_DIR, "..", "word.json")
 
 SYSTEM_PROMPT = (
     "أنت مساعد متخصص باللهجة العراقية، تشرح معاني الكلمات والمصطلحات العراقية "

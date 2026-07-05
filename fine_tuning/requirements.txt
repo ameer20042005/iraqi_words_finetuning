@@ -1,0 +1,7 @@
+# متطلبات التدريب فقط — توليد البيانات (prepare_finetuning.py) لا يحتاج أي مكتبة
+torch
+transformers
+datasets
+peft
+trl
+accelerate
