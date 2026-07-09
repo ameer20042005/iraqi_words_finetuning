@@ -28,10 +28,11 @@ results = search("شنو معنى شلونك؟", top_k=5)
 
 ## `fine_tuning/` — التدريب
 
-توليد بيانات التدريب بصيغتي chat وAlpaca، وسكربت تدريب LoRA:
+توليد بيانات التدريب بصيغتي chat وAlpaca (مصطلحات word.json + عينة متوازنة من
+محادثات بيع/شراء وحياة يومية حقيقية من مستودع `database_LLm` الشقيق)، وسكربت تدريب LoRA:
 
 ```bash
-python fine_tuning/prepare_finetuning.py           # إعادة التوليد بعد تعديل word.json
+python fine_tuning/prepare_finetuning.py           # إعادة التوليد بعد تعديل word.json أو database_LLm
 python fine_tuning/train.py                        # التدريب (يحتاج GPU)
 ```
 
